@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: kostiscodefresh/helm-promotion-app
+  repository: lrochette/helm-promotion-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -19,13 +19,9 @@ service:
   port: 80
 
 
-## Application level settings  
+## Application level settings
 appMode: production
 certificatePath: /etc/ssl/prod
 paypalURLLocation: https://prod.paypal.example.com
 databaseUser: prod-user
 databasePassword: prod-password
-
-
-
-
